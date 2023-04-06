@@ -60,7 +60,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 
 Edit the `ReadMe` file with your answers to the questions below.
 
-1. In your own words, define closure (1-2 sentences).
+1. Closure is created when a nested function looks outside of its scope (always outward, never inward) for variables that inform the processes of the function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -81,9 +81,9 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+a. Where is closure used in this code? **In the nested anonymous function.** How can you tell? **You can see the function console logging a string that accesses a variable located in the global scope (the parameter 'name').
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? Invoking dansRoll will always return the first part of the string console logged in the anonymous nested function "Dan rolled a...." What could change? The number Dan rolled (newRoll).
+c. What is the lexical scope of `newRoll`? The curly braces of the anonymous nested function.
 
 
 ### Task 3 - Stretch Goals
